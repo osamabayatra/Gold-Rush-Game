@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: red;
+    align-items: center;
+}
+
+.player1 , .player2, .coin{
+    width: 45%;
+    justify-self: center;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5 ,1fr);
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(43, 45, 192);
+    align-items: center;
+}
+
+.score > h2{
+    color: red;
+}
